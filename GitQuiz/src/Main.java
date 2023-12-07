@@ -1,5 +1,6 @@
 public class Main {
-    public static void main (String args[]){
+    public static void main (String[] args)
+    {
         Quiz q = (int one, int two) -> {
             System.out.println("In Interface");
             int num = one;
@@ -10,8 +11,9 @@ public class Main {
             }
             return num;
         };
-        
-        int ans = q.addNums(1, 4);
+
+
+        int ans = q.addNums(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
         System.out.println(ans);
     }
 }
