@@ -1,5 +1,3 @@
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+interface Quiz{
+    int addNums(int one, int two);
 }
